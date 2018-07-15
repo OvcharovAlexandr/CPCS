@@ -1,0 +1,71 @@
+.app {
+
+  height: 100%;
+  
+}
+
+.modeButton {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  background-color: #f9f9f9;
+  color: #b7bee8;
+  font-size: 50%;
+}
+
+.objectButton {
+  width: 90%;
+  height: 90%;
+  horiz-align: center;
+  text-align: center;
+  background-color: #f9f9f9;
+  color: #b7bee8;
+  font-size: 50%;
+}
+
+.titleOfPage {
+  height: 100%;
+  text-align: center;
+  background-color: #e8e8e8;
+  color: #4f4f4f;
+}
+
+.objectBlock {
+  width: 30%;
+  float: left;
+  color: black;
+  border: solid;
+  border-color: #9da0a4;
+}
+
+.pageBlock {
+  width: 69%;
+  border: solid;
+  border-color: #9da0a4;
+  float: left;
+}
+
+.saveButton {
+  vertical-align: middle;
+  float: right;
+  margin-top: -40px;
+  margin-right: 20px;
+}
+
+.tableOfButtons {
+
+  width: 100%;
+
+}
+
+.tableOfObjects {
+
+  width: 100%;
+
+}
+
+.errorsBlock{
+  width: 100%;
+  background-color: #f5e1e1;
+  color: #b76665;
+}
