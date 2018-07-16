@@ -46,7 +46,7 @@ class PortalPage extends Component {
     }
 
     renderDescription(){
-        return this.props.description ==='' ? null:<div><h2>Description</h2><p></p>{this.props.description}</div>;
+        return this.props.description ==='' ? null:<div><h4>Description</h4><p></p><i>{this.props.description}</i></div>;
     }
 
     renderReqiredHeader(){
@@ -56,7 +56,7 @@ class PortalPage extends Component {
     renderErrorsBlock(){
         return this.props.errors===""?
             null:
-            <div className="errorsBlock">
+            <div className="portalPage_errorsBlock">
                 <h3>{this.props.errors}</h3>
             </div>;
     }
@@ -66,7 +66,9 @@ class PortalPage extends Component {
             <div className={this.props.editMode?"graySolidBorder col-md-12 col-lg-8":"col-md-12"}>
                 <div>
                     <h1>{this.props.titleOfPage}</h1>
-                    <button className="portalPage_saveButton" onClick={this.onSaveButtonClick}>{this.props.editMode?"Save":<span className="glyphicon glyphicon-pencil" aria-hidden="true">Edit</span>} form</button>
+                    <button className="btn btn-default portalPage_saveButton" onClick={this.onSaveButtonClick}>
+                        {this.props.editMode?"Save":<span><span className="glyphicon glyphicon-pencil" aria-hidden="true"/>Edit</span>} form
+                    </button>
                 </div>
                 {this.renderDescription()}
                 {this.renderErrorsBlock()}
@@ -82,7 +84,7 @@ class PortalPage extends Component {
                     {this.renderForm()}
                     </tbody>
                 </table>
-                {this.props.editMode?null:<input type="submit" value="Submit" onClick={this.onSubmitButtonsClick}/>}
+                {this.props.editMode?null:<input className="portalPage_submitBtn btn btn-default btn-lg glyphicon-align-right" type="submit" value="Submit" onClick={this.onSubmitButtonsClick}/>}
             </div>
         );
     }

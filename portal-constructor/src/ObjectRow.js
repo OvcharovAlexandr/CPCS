@@ -295,20 +295,31 @@ class ObjectRow extends Component {
 
                 return  <div class> Enter the question:
                             <input type="text" value={this.state.questionTitle} onChange={this.handlerOnQuestionChange}/>
-                            <button onClick={this.setQuestionTitle}><span className="glyphicon glyphicon-ok" aria-hidden="true"/></button>
+                            <button className="btn-default btn-sm withoutBorder" onClick={this.setQuestionTitle}>
+                                <span className="glyphicon glyphicon-ok" aria-hidden="true"/>
+                            </button>
                         </div>;
             case "name":
 
                 return  <div> Enter the name:
                     <input type="text" value={this.state.nameOfObject} onChange={this.handlerOnNameChange}/>
-                    <button onClick={this.setName}><span className="glyphicon glyphicon-ok" aria-hidden="true"/></button>
+                    <button className="btn-default btn-sm withoutBorder" onClick={this.setName}>
+                        <span className="glyphicon glyphicon-ok" aria-hidden="true"/>
+                    </button>
                 </div>;
 
             default:
                 return  <div className="row">
-                            <p className={this.props.editMode?"col-sm-11":"col-sm-12"}>{this.props.object.questionTitle}{this.props.object.required?"*":""}
-                            {this.props.editMode?<button onClick={this.editQuestionTitle}><span className="glyphicon glyphicon-pencil" aria-hidden="true"/></button>:null}</p>
-                            {this.props.editMode?<p className="col-sm-11">Name of element: {this.props.object.name}<button onClick={this.editName}><span className="glyphicon glyphicon-pencil" aria-hidden="true"/></button></p>:null}
+                            <p className={this.props.editMode?"col-sm-11":"col-sm-12"}>{this.props.object.questionTitle} <span className="redText">{this.props.object.required?"*":""}</span>
+                            {this.props.editMode?<button className="btn-default btn-sm withoutBorder"
+                                                         onClick={this.editQuestionTitle}>
+                                <span className="glyphicon glyphicon-pencil" aria-hidden="true"/>
+                            </button>:null}</p>
+                            {this.props.editMode?<p className="col-sm-11">Name of element:
+                                {this.props.object.name}<button className="btn-default btn-sm withoutBorder"
+                                                                onClick={this.editName}>
+                                    <span className="glyphicon glyphicon-pencil" aria-hidden="true"/>
+                                </button></p>:null}
                         </div>;
         }
     }
@@ -329,23 +340,25 @@ class ObjectRow extends Component {
     renderFieldButtons(id) {
 
         return this.props.editMode?
-            <div>
-                <button name={id} onClick={this.editField}><span className="glyphicon glyphicon-pencil" aria-hidden="true"/></button>
-                <button name={id} onClick={this.removeField}><span className="glyphicon glyphicon-trash" aria-hidden="true"/></button>
+            <div className="btn-group">
+                <button className="btn btn-default btn-xs withoutBorder" name={id} onClick={this.editField}><span className="glyphicon glyphicon-pencil" aria-hidden="true"/></button>
+                <button className="btn btn-default btn-xs withoutBorder" name={id} onClick={this.removeField}><span className="glyphicon glyphicon-trash" aria-hidden="true"/></button>
             </div>:
             null;
     }
 
     renderAddChoiseButton() {
         return this.props.editMode?
-                <p><button onClick={this.addChoise}>add choise</button></p>:
+                <p><button  className="btn btn-default btn-xs withoutBorder" aria-hidden="true" onClick={this.addChoise}>
+                    <span className="glyphicon glyphicon-record" aria-hidden="true"/> add choise</button></p>:
                 null;
     }
 
     renderField() {
         switch (this.props.object.typeOfField) {
             case "text":
-                return <td><input name={this.props.object.name}
+                return <td><input className="col-xs-11"
+                                  name={this.props.object.name}
                                   type="text"
                                   placeholder={this.props.object.field.placeholder}
                                   onChange={this.onChangeText}/></td>;
@@ -360,13 +373,15 @@ class ObjectRow extends Component {
                 return  this.renderSelectField();
 
             case "file":
-                return <td><input name={this.props.object.name}
+                return <td><input className="col-xs-11"
+                                  name={this.props.object.name}
                                   type="file"
                                   placeholder={this.props.object.placeholder}
                                   onChange={this.onChangeFile}/></td>;
 
             case "textarea":
-                return <td><textarea name={this.props.object.name}
+                return <td><textarea className="col-xs-11"
+                                     name={this.props.object.name}
                                      onChange={this.onChangeTextarea}/></td>;
 
             default:
@@ -375,9 +390,11 @@ class ObjectRow extends Component {
     }
 
     renderEditingChoiseBlock(){
-        return  <div> Enter the choise text:
+        return  <div > Enter the choise text:
                     <input type="text" value={this.state.nameOfChoise} onChange={this.handlerOnChoiseChange}/>
-                    <button onClick={this.setChoiseName}><span className="glyphicon glyphicon-ok" aria-hidden="true"/></button>
+                    <button className="btn-default btn-sm withoutBorder" onClick={this.setChoiseName}>
+                        <span className="glyphicon glyphicon-ok" aria-hidden="true"/>
+                    </button>
                 </div>;
     }
 
@@ -413,7 +430,7 @@ class ObjectRow extends Component {
                                value={curField.value}
                                onChange={this.onChangeCheckbox}/>
                         {curField.value}
-                        {this.renderFieldButtons(curField.id)}
+                       {this.renderFieldButtons(curField.id)}
                     </div>}
                 </div>)}
             {this.renderAddChoiseButton()}
@@ -424,15 +441,18 @@ class ObjectRow extends Component {
         return  <td>
                     {this.props.object.id===this.state.editingField?this.renderEditingChoiseBlock():
                     <div>
-                        <select name={this.props.object.name}
-                            onChange={this.onSelectChange}
-                            defaultValue={this.props.object.options[this.props.object.selectedIndex].value}>
-                            {this.props.object.options.map((curField, index) =>
-                                <option key={curField.id} value={curField.value}>
+                        <select className={this.props.editMode?"col-xs-8":"col-xs-11"}
+                                name={this.props.object.name}
+                                onChange={this.onSelectChange}
+                                defaultValue={this.props.object.options[this.props.object.selectedIndex].value}>
+                                    {this.props.object.options.map((curField, index) =>
+                                        <option key={curField.id} value={curField.value}>
                                     {curField.value}
                                 </option>)}
                         </select>
-                        {this.renderFieldButtons(this.props.object.id)}
+                        <div className={this.props.editMode?"col-xs-4":"col-xs-0"}>
+                            {this.renderFieldButtons(this.props.object.id)}
+                        </div>
                     </div>}
                     {this.renderAddChoiseButton()}
                 </td>;

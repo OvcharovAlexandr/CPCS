@@ -39,7 +39,20 @@
   border: none;
 }
 
-.errorsBlock{
+.redText{
+  color:red;
+}
+
+.portalPage_errorsBlock{
+  border: solid 1px;
+  border-color: #b76665;
+  text-align: center;
+  border-radius: 10px;
   background-color: #f5e1e1;
   color: #b76665;
+  font-family: "Times New Roman";
+}
+
+.portalPage_submitBtn{
+  float: right;
 }

@@ -25,71 +25,18 @@
       <file leaf-file-name="App.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.0">
-              <caret line="38" column="15" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="15" />
+            <state vertical-scroll-proportion="-6.3207545">
+              <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="227" column="59" selection-start-line="227" selection-start-column="59" selection-end-line="227" selection-end-column="59" />
-              <folding>
-                <element signature="n#!!block;n#constructor#0;n#App#0" expanded="false" />
-                <element signature="n#!!block;n#removeObject#0;n#App#0" expanded="false" />
-                <element signature="n#!!block;n#onDescriptionChange#0;n#App#0" expanded="false" />
-                <element signature="n#!!block;n#trigerEditMode#0;n#App#0" expanded="false" />
-                <element signature="n#!!block;n#inspectBeforeSubmit#0;n#App#0" expanded="false" />
-                <element signature="n#!!block;n#submitForm#0;n#App#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ObjectBlock.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ObjectBlock.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="78" column="52" selection-start-line="78" selection-start-column="52" selection-end-line="78" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ObjectRow.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ObjectRow.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.55009454">
-              <caret line="320" column="60" selection-start-line="320" selection-start-column="60" selection-end-line="320" selection-end-column="60" />
-              <folding>
-                <element signature="n#!!block;n#constructor#0;n#ObjectRow#0" expanded="false" />
-                <element signature="n#!!block;n#removeObject#0;n#ObjectRow#0" expanded="false" />
-                <element signature="n#!!block;n#setQuestionTitle#0;n#ObjectRow#0" expanded="false" />
-                <element signature="n#!!block;n#editName#0;n#ObjectRow#0" expanded="false" />
-                <element signature="n#!!block;n#handlerOnNameChange#0;n#ObjectRow#0" expanded="false" />
-                <element signature="n#!!block;n#handlerRequiredChange#0;n#ObjectRow#0" expanded="false" />
-                <element signature="n#!!block;n#editField#0;n#ObjectRow#0" expanded="false" />
-                <element signature="n#!!block;n#handlerOnChoiseChange#0;n#ObjectRow#0" expanded="false" />
-                <element signature="n#!!block;n#setChoiseName#0;n#ObjectRow#0" expanded="false" />
-                <element signature="n#!!block;n#onSelectChange#0;n#ObjectRow#0" expanded="false" />
-                <element signature="n#!!block;n#onChangeCheckbox#0;n#ObjectRow#0" expanded="false" />
-                <element signature="n#!!block;n#onChangeText#0;n#ObjectRow#0" expanded="false" />
-                <element signature="n#!!block;n#onChangeFile#0;n#ObjectRow#0" expanded="false" />
-                <element signature="n#!!block;n#onChangeTextarea#0;n#ObjectRow#0" expanded="false" />
-                <element signature="n#!!block;n#renderQuestionTitleBlock#0;n#ObjectRow#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PortalPage.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PortalPage.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/PortalPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="76" column="38" selection-start-line="76" selection-start-column="38" selection-end-line="76" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.3315412">
+              <caret line="48" column="59" selection-start-line="48" selection-start-column="59" selection-end-line="48" selection-end-column="59" />
               <folding>
                 <element signature="n#!!block;n#constructor#0;n#PortalPage#0" expanded="false" />
                 <element signature="n#!!block;n#onSaveButtonClick#0;n#PortalPage#0" expanded="false" />
@@ -98,8 +45,6 @@
                 <element signature="n#!!block;n#moveObject#0;n#PortalPage#0" expanded="false" />
                 <element signature="n#!!block;n#saveObject#0;n#PortalPage#0" expanded="false" />
                 <element signature="n#!!block;n#renderForm#0;n#PortalPage#0" expanded="false" />
-                <element signature="n#!!block;n#renderDescription#0;n#PortalPage#0" expanded="false" />
-                <element signature="n#!!block;n#renderErrorsBlock#0;n#PortalPage#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -128,9 +73,9 @@
         <option value="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.svg" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/ObjectBlock.js" />
-        <option value="$PROJECT_DIR$/src/PortalPage.js" />
-        <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/ObjectRow.js" />
+        <option value="$PROJECT_DIR$/src/App.css" />
+        <option value="$PROJECT_DIR$/src/PortalPage.js" />
       </list>
     </option>
   </component>
@@ -665,16 +610,16 @@
       <workItem from="1531552766043" duration="9098000" />
       <workItem from="1531638920597" duration="30558000" />
       <workItem from="1531676027971" duration="20817000" />
-      <workItem from="1531740249761" duration="7811000" />
+      <workItem from="1531740249761" duration="12572000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165348000" />
+    <option name="totallyTimeSpent" value="170109000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -682,6 +627,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="RNConsole" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -691,14 +637,13 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -739,7 +684,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="106" />
+      <option name="time" value="113" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -791,8 +736,6 @@
             <element signature="n#!!block;n#moveObject#0;n#PortalPage#0" expanded="false" />
             <element signature="n#!!block;n#saveObject#0;n#PortalPage#0" expanded="false" />
             <element signature="n#!!block;n#renderForm#0;n#PortalPage#0" expanded="false" />
-            <element signature="n#!!block;n#renderDescription#0;n#PortalPage#0" expanded="false" />
-            <element signature="n#!!block;n#renderErrorsBlock#0;n#PortalPage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -832,6 +775,14 @@
             <element signature="n#!!block;n#onChangeFile#0;n#ObjectRow#0" expanded="false" />
             <element signature="n#!!block;n#onChangeTextarea#0;n#ObjectRow#0" expanded="false" />
             <element signature="n#!!block;n#renderQuestionTitleBlock#0;n#ObjectRow#0" expanded="false" />
+            <element signature="n#!!block;n#renderButtonsBlock#0;n#ObjectRow#0" expanded="false" />
+            <element signature="n#!!block;n#renderFieldButtons#0;n#ObjectRow#0" expanded="false" />
+            <element signature="n#!!block;n#renderAddChoiseButton#0;n#ObjectRow#0" expanded="false" />
+            <element signature="n#!!block;n#renderField#0;n#ObjectRow#0" expanded="false" />
+            <element signature="n#!!block;n#renderRadioField#0;n#ObjectRow#0" expanded="false" />
+            <element signature="n#!!block;n#renderCheckboxField#0;n#ObjectRow#0" expanded="false" />
+            <element signature="n#!!block;n#renderSelectField#0;n#ObjectRow#0" expanded="false" />
+            <element signature="n#!!block;n#render#0;n#ObjectRow#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -879,6 +830,14 @@
             <element signature="n#!!block;n#onChangeFile#0;n#ObjectRow#0" expanded="false" />
             <element signature="n#!!block;n#onChangeTextarea#0;n#ObjectRow#0" expanded="false" />
             <element signature="n#!!block;n#renderQuestionTitleBlock#0;n#ObjectRow#0" expanded="false" />
+            <element signature="n#!!block;n#renderButtonsBlock#0;n#ObjectRow#0" expanded="false" />
+            <element signature="n#!!block;n#renderFieldButtons#0;n#ObjectRow#0" expanded="false" />
+            <element signature="n#!!block;n#renderAddChoiseButton#0;n#ObjectRow#0" expanded="false" />
+            <element signature="n#!!block;n#renderField#0;n#ObjectRow#0" expanded="false" />
+            <element signature="n#!!block;n#renderRadioField#0;n#ObjectRow#0" expanded="false" />
+            <element signature="n#!!block;n#renderCheckboxField#0;n#ObjectRow#0" expanded="false" />
+            <element signature="n#!!block;n#renderSelectField#0;n#ObjectRow#0" expanded="false" />
+            <element signature="n#!!block;n#render#0;n#ObjectRow#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -918,6 +877,14 @@
             <element signature="n#!!block;n#onChangeFile#0;n#ObjectRow#0" expanded="false" />
             <element signature="n#!!block;n#onChangeTextarea#0;n#ObjectRow#0" expanded="false" />
             <element signature="n#!!block;n#renderQuestionTitleBlock#0;n#ObjectRow#0" expanded="false" />
+            <element signature="n#!!block;n#renderButtonsBlock#0;n#ObjectRow#0" expanded="false" />
+            <element signature="n#!!block;n#renderFieldButtons#0;n#ObjectRow#0" expanded="false" />
+            <element signature="n#!!block;n#renderAddChoiseButton#0;n#ObjectRow#0" expanded="false" />
+            <element signature="n#!!block;n#renderField#0;n#ObjectRow#0" expanded="false" />
+            <element signature="n#!!block;n#renderRadioField#0;n#ObjectRow#0" expanded="false" />
+            <element signature="n#!!block;n#renderCheckboxField#0;n#ObjectRow#0" expanded="false" />
+            <element signature="n#!!block;n#renderSelectField#0;n#ObjectRow#0" expanded="false" />
+            <element signature="n#!!block;n#render#0;n#ObjectRow#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1187,7 +1154,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.03046595">
           <caret line="227" column="59" selection-start-line="227" selection-start-column="59" selection-end-line="227" selection-end-column="59" />
           <folding>
             <element signature="n#!!block;n#constructor#0;n#App#0" expanded="false" />
@@ -1200,35 +1167,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PortalPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="76" column="38" selection-start-line="76" selection-start-column="38" selection-end-line="76" selection-end-column="38" />
-          <folding>
-            <element signature="n#!!block;n#constructor#0;n#PortalPage#0" expanded="false" />
-            <element signature="n#!!block;n#onSaveButtonClick#0;n#PortalPage#0" expanded="false" />
-            <element signature="n#!!block;n#onSubmitButtonsClick#0;n#PortalPage#0" expanded="false" />
-            <element signature="n#!!block;n#removeObject#0;n#PortalPage#0" expanded="false" />
-            <element signature="n#!!block;n#moveObject#0;n#PortalPage#0" expanded="false" />
-            <element signature="n#!!block;n#saveObject#0;n#PortalPage#0" expanded="false" />
-            <element signature="n#!!block;n#renderForm#0;n#PortalPage#0" expanded="false" />
-            <element signature="n#!!block;n#renderDescription#0;n#PortalPage#0" expanded="false" />
-            <element signature="n#!!block;n#renderErrorsBlock#0;n#PortalPage#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.0">
-          <caret line="38" column="15" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ObjectBlock.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.29928315">
           <caret line="78" column="52" selection-start-line="78" selection-start-column="52" selection-end-line="78" selection-end-column="52" />
           <folding />
         </state>
@@ -1236,8 +1177,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ObjectRow.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55009454">
-          <caret line="320" column="60" selection-start-line="320" selection-start-column="60" selection-end-line="320" selection-end-column="60" />
+        <state vertical-scroll-proportion="1.3100358">
+          <caret line="290" column="30" selection-start-line="290" selection-start-column="30" selection-end-line="290" selection-end-column="30" />
           <folding>
             <element signature="n#!!block;n#constructor#0;n#ObjectRow#0" expanded="false" />
             <element signature="n#!!block;n#removeObject#0;n#ObjectRow#0" expanded="false" />
@@ -1254,6 +1195,38 @@
             <element signature="n#!!block;n#onChangeFile#0;n#ObjectRow#0" expanded="false" />
             <element signature="n#!!block;n#onChangeTextarea#0;n#ObjectRow#0" expanded="false" />
             <element signature="n#!!block;n#renderQuestionTitleBlock#0;n#ObjectRow#0" expanded="false" />
+            <element signature="n#!!block;n#renderButtonsBlock#0;n#ObjectRow#0" expanded="false" />
+            <element signature="n#!!block;n#renderFieldButtons#0;n#ObjectRow#0" expanded="false" />
+            <element signature="n#!!block;n#renderAddChoiseButton#0;n#ObjectRow#0" expanded="false" />
+            <element signature="n#!!block;n#renderField#0;n#ObjectRow#0" expanded="false" />
+            <element signature="n#!!block;n#renderRadioField#0;n#ObjectRow#0" expanded="false" />
+            <element signature="n#!!block;n#renderCheckboxField#0;n#ObjectRow#0" expanded="false" />
+            <element signature="n#!!block;n#renderSelectField#0;n#ObjectRow#0" expanded="false" />
+            <element signature="n#!!block;n#render#0;n#ObjectRow#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.3207545">
+          <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PortalPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3315412">
+          <caret line="48" column="59" selection-start-line="48" selection-start-column="59" selection-end-line="48" selection-end-column="59" />
+          <folding>
+            <element signature="n#!!block;n#constructor#0;n#PortalPage#0" expanded="false" />
+            <element signature="n#!!block;n#onSaveButtonClick#0;n#PortalPage#0" expanded="false" />
+            <element signature="n#!!block;n#onSubmitButtonsClick#0;n#PortalPage#0" expanded="false" />
+            <element signature="n#!!block;n#removeObject#0;n#PortalPage#0" expanded="false" />
+            <element signature="n#!!block;n#moveObject#0;n#PortalPage#0" expanded="false" />
+            <element signature="n#!!block;n#saveObject#0;n#PortalPage#0" expanded="false" />
+            <element signature="n#!!block;n#renderForm#0;n#PortalPage#0" expanded="false" />
           </folding>
         </state>
       </provider>
