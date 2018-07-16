@@ -77,7 +77,7 @@ class App extends Component {
                         required: false,
                         typeOfField: type,
                         name:"selectField",
-                        selectedIndex: 1,
+                        selectedIndex: 0,
                         options:[   {id:uuidv1(), value:"Set the variant name"},
                                     {id:uuidv1(), value:"Set the variant name2"}]}];
                 break;
@@ -225,7 +225,8 @@ class App extends Component {
     render() {
 
         return (
-            <div className="app">
+            <div className="container-fluid graySolidBorder" >
+                <div className="row">
                 <ObjectBlock editMode={this.state.editMode}
                              titleOfPage={this.state.titleOfPage}
                              buttonsPage={this.state.buttonsPage}
@@ -244,6 +245,7 @@ class App extends Component {
                              trigerEditMode={this.trigerEditMode}
                              submitForm={this.submitForm}
                 />
+                </div>
             </div>
         );
     }

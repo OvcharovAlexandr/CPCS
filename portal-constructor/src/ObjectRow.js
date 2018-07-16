@@ -164,7 +164,7 @@ class ObjectRow extends Component {
                     return;
                 }
 
-                const options = object.options.filter((option, index) => !index===object.selectedIndex);
+                const options = object.options.filter((option, index) => index!==object.selectedIndex);
                 object.options = options;
                 object.selectedIndex = 0;
 
@@ -293,22 +293,22 @@ class ObjectRow extends Component {
 
             case "questionTitle":
 
-                return  <div> Enter the question:
+                return  <div class> Enter the question:
                             <input type="text" value={this.state.questionTitle} onChange={this.handlerOnQuestionChange}/>
-                            <button onClick={this.setQuestionTitle}>Set</button>
+                            <button onClick={this.setQuestionTitle}><span className="glyphicon glyphicon-ok" aria-hidden="true"/></button>
                         </div>;
             case "name":
 
                 return  <div> Enter the name:
                     <input type="text" value={this.state.nameOfObject} onChange={this.handlerOnNameChange}/>
-                    <button onClick={this.setName}>Set</button>
+                    <button onClick={this.setName}><span className="glyphicon glyphicon-ok" aria-hidden="true"/></button>
                 </div>;
 
             default:
-                return  <div>
-                            <h3>{this.props.object.questionTitle}{this.props.object.required?"*":""}</h3>
-                            {this.props.editMode?<button onClick={this.editQuestionTitle}>Edit</button>:null}
-                            {this.props.editMode?<p>Name of element: {this.props.object.name}<button onClick={this.editName}>Edit</button></p>:null}
+                return  <div className="row">
+                            <p className={this.props.editMode?"col-sm-11":"col-sm-12"}>{this.props.object.questionTitle}{this.props.object.required?"*":""}
+                            {this.props.editMode?<button onClick={this.editQuestionTitle}><span className="glyphicon glyphicon-pencil" aria-hidden="true"/></button>:null}</p>
+                            {this.props.editMode?<p className="col-sm-11">Name of element: {this.props.object.name}<button onClick={this.editName}><span className="glyphicon glyphicon-pencil" aria-hidden="true"/></button></p>:null}
                         </div>;
         }
     }
@@ -317,9 +317,12 @@ class ObjectRow extends Component {
         return this.props.editMode ?
                     <td>
                         <input type="checkbox" onChange={this.handlerRequiredChange} checked={this.props.object.required}/>
-                        <button onClick={this.removeObject}>Remove</button>
-                        <button name="moveUp" onClick={this.moveObject}>Move up</button>
-                        <button name="moveDown"onClick={this.moveObject}>Move down</button>
+
+                        <div className="btn-group rext-right">
+                            <button className="btn btn-default objectRow_removeObjectButton" onClick={this.removeObject}>Remove</button>
+                            <button className="btn btn-default withoutBorder" name="moveUp" onClick={this.moveObject}><span className="glyphicon glyphicon-arrow-up" aria-hidden="true"/></button>
+                            <button className="btn btn-default withoutBorder" name="moveDown"onClick={this.moveObject}><span className="glyphicon glyphicon-arrow-down" aria-hidden="true"/></button>
+                        </div>
                     </td>: null;
     }
 
@@ -327,8 +330,8 @@ class ObjectRow extends Component {
 
         return this.props.editMode?
             <div>
-                <button name={id} onClick={this.editField}>edit</button>
-                <button name={id} onClick={this.removeField}>remove</button>
+                <button name={id} onClick={this.editField}><span className="glyphicon glyphicon-pencil" aria-hidden="true"/></button>
+                <button name={id} onClick={this.removeField}><span className="glyphicon glyphicon-trash" aria-hidden="true"/></button>
             </div>:
             null;
     }
@@ -374,7 +377,7 @@ class ObjectRow extends Component {
     renderEditingChoiseBlock(){
         return  <div> Enter the choise text:
                     <input type="text" value={this.state.nameOfChoise} onChange={this.handlerOnChoiseChange}/>
-                    <button onClick={this.setChoiseName}>Set</button>
+                    <button onClick={this.setChoiseName}><span className="glyphicon glyphicon-ok" aria-hidden="true"/></button>
                 </div>;
     }
 
@@ -419,7 +422,7 @@ class ObjectRow extends Component {
 
     renderSelectField() {
         return  <td>
-            {this.props.object.id===this.state.editingField?this.renderEditingChoiseBlock():
+                    {this.props.object.id===this.state.editingField?this.renderEditingChoiseBlock():
                     <div>
                         <select name={this.props.object.name}
                             onChange={this.onSelectChange}

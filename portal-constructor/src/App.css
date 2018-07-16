@@ -1,71 +1,45 @@
-.app {
 
+.objectblock{
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-right: 5px;
   height: 100%;
-  
 }
 
-.modeButton {
-  width: 50%;
-  height: 100%;
-  text-align: center;
-  background-color: #f9f9f9;
-  color: #b7bee8;
-  font-size: 50%;
+.objectblock_modeDiv{
+  height: 3px;
+}
+.selectedColour{
+  background-color:#6f7bcf;
 }
 
-.objectButton {
-  width: 90%;
-  height: 90%;
-  horiz-align: center;
-  text-align: center;
-  background-color: #f9f9f9;
-  color: #b7bee8;
-  font-size: 50%;
-}
-
-.titleOfPage {
-  height: 100%;
-  text-align: center;
+.grayBG{
+  padding-left: 3px;
   background-color: #e8e8e8;
-  color: #4f4f4f;
 }
 
-.objectBlock {
-  width: 30%;
-  float: left;
-  color: black;
-  border: solid;
+.withoutBorder{
+  border: none;
+}
+
+.graySolidBorder {
+  border: solid 1px;
   border-color: #9da0a4;
 }
 
-.pageBlock {
-  width: 69%;
-  border: solid;
-  border-color: #9da0a4;
-  float: left;
-}
-
-.saveButton {
+.portalPage_saveButton {
   vertical-align: middle;
   float: right;
   margin-top: -40px;
   margin-right: 20px;
 }
 
-.tableOfButtons {
-
-  width: 100%;
-
-}
-
-.tableOfObjects {
-
-  width: 100%;
-
+.objectRow_removeObjectButton{
+  color: red;
+  border: none;
 }
 
 .errorsBlock{
-  width: 100%;
   background-color: #f5e1e1;
   color: #b76665;
 }

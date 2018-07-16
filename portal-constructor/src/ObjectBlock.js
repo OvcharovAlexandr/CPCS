@@ -30,17 +30,17 @@ class ObjectBlock extends Component {
     }
 
     renderObjectButton(type,title) {
-        return  <button name={type} className="objectButton" onClick={this.addObject}>
-            <h3>{title}</h3>
+        return  <button name={type} className="btn btn-default btn-xs objectButton col-xs-12" onClick={this.addObject}>
+            <h6><b>{title}</b></h6>
         </button>;
     }
 
     renderBlockOfObjectButtons() {
         return this.state.buttonsPage?
-            <div className="blockOfObjectButtons">
-                <h3>Select fields will be added to form</h3>
-                <h2>Add custom field</h2>
-                <table className="tableOfButtons">
+            <div className="col-xs-12">
+                <i>Select fields will be added to form</i>
+                <h4>Add custom field</h4>
+                <table className="table col-xs-12">
                         <tbody>
                             <tr>
                                 <td>{this.renderObjectButton("text", "Single-line text")}</td>
@@ -63,27 +63,31 @@ class ObjectBlock extends Component {
     renderDescriptionBlock() {
 
         return this.state.buttonsPage?null:
-            <div className="descriptionBlock">
-                <h3>Optional form description</h3>
-                <h2>Form description</h2>
-                <textarea name="textAreaDesription" value={this.props.description} onChange={this.onDescriptionChange}/>
+            <div className="row">
+                <i className="col-xs-12">Optional form description</i>
+                <h4 className="col-xs-12">Form description</h4>
+                <div className="col-xs-12">
+                    <textarea className="col-xs-12" name="textAreaDesription" value={this.props.description} onChange={this.onDescriptionChange}/>
+                </div>
             </div>;
     }
 
     render() {
         if (this.props.editMode) {
             return (
-                <div className="objectBlock">
-                    <div className="titleOfPage">
-                        <h1>{this.props.titleOfPage}</h1>
+                <div className="objectblock graySolidBorder col-lg-4 col-md-12 row" >
+                    <div className="grayBG col-sm-12">
+                        <h1 className="text-center">{this.props.titleOfPage}</h1>
                     </div>
-                    <div>
-                        <button className="modeButton" name="customFields" onClick={this.setButtonsPage}>
+                    <div className="col-sm-12">
+                        <button className="btn btn-default col-xs-6 withoutBorder" name="customFields" onClick={this.setButtonsPage}>
                             <h3>Custom fields</h3>
                         </button>
-                        <button className="modeButton" name="cescriptionButton" onClick={this.setButtonsPage}>
-                            <h3>Description (Optional)</h3>
+                        <button className="btn btn-default col-xs-6 withoutBorder" name="cescriptionButton" onClick={this.setButtonsPage}>
+                            <h3>Description</h3>
                         </button>
+                        <div className={this.state.buttonsPage?"objectblock_modeDiv col-xs-6 selectedColour":"modeDiv col-xs-6"}/>
+                        <div className={!this.state.buttonsPage?"objectblock_modeDiv col-xs-6 selectedColour":"modeDiv col-xs-6"}/>
                     </div>
                     {this.renderBlockOfObjectButtons()}
                     {this.renderDescriptionBlock()}

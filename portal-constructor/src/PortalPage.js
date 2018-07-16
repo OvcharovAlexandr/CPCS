@@ -50,7 +50,7 @@ class PortalPage extends Component {
     }
 
     renderReqiredHeader(){
-        return this.props.editMode?<th>Reqired</th>:null;
+        return this.props.editMode?<th className="col-md-3">Reqired</th>:null;
     }
 
     renderErrorsBlock(){
@@ -63,18 +63,18 @@ class PortalPage extends Component {
 
     render() {
         return (
-            <div className="pageBlock">
-                <div className="titleOfPage">
+            <div className={this.props.editMode?"graySolidBorder col-md-12 col-lg-8":"col-md-12"}>
+                <div>
                     <h1>{this.props.titleOfPage}</h1>
-                    <button className="saveButton" onClick={this.onSaveButtonClick}>{this.props.editMode?"Save":"Edit"} form</button>
+                    <button className="portalPage_saveButton" onClick={this.onSaveButtonClick}>{this.props.editMode?"Save":<span className="glyphicon glyphicon-pencil" aria-hidden="true">Edit</span>} form</button>
                 </div>
                 {this.renderDescription()}
                 {this.renderErrorsBlock()}
-                <table className="tableOfObjects">
+                <table className="table">
                     <thead>
                     <tr>
-                        <th>Question title</th>
-                        <th>Choises</th>
+                        <th className="col-md-5">Question title</th>
+                        <th className={this.props.editMode?"col-md-4":"col-md-7"}>Choises</th>
                         {this.renderReqiredHeader()}
                     </tr>
                     </thead>
